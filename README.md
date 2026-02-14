@@ -12,7 +12,7 @@ This library is built with a **production-first** mindset, focusing on high-qual
 
 * **Adaptive Architecture:** Instead of a one-size-fits-all template, each folder uses a custom file structure tailored to the specific needs of the asset class (e.g., specialized Greeks modules for Options or feature engineering pipelines for ML).
 * **Institutional Rigor:** Every implementation accounts for real-world constraints, including vectorized backtesting, slippage modeling, transaction cost analysis, and advanced position sizing.
-* **The Alpha Edge:** Each strategy includes at least one advanced optimization—such as Kalman Filters for noise reduction, Bayesian parameter tuning, or exotic risk-parity models—to provide a competitive edge.
+* **The Alpha Edge:** Each strategy includes at least one advanced optimization such as Kalman Filters for noise reduction, Bayesian parameter tuning, or exotic risk-parity models to provide a competitive edge.
 * **Research-Backed:** Every module is accompanied by documentation explaining the market anomaly being exploited, the mathematical core of the logic, and the specific market regimes where the strategy excels or fails.
 
 ---
