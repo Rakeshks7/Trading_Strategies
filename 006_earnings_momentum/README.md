@@ -1,4 +1,4 @@
-# Earnings-Momentum Alpha: Institutional Back test Engine
+# Earnings-Momentum: Back test Engine
 
 Welcome to the repo. If you're reading this, you're moving past retail screeners and building systematic, quantifiable edges. 
 
@@ -11,4 +11,5 @@ Standard momentum strategies get chopped to pieces by the volatility crush that 
 * **Data Engine:** Handles point-in-time fundamental alignment.
 * **Alpha:** Calculates Standardized Unexpected Earnings (SUE) and Kalman-smoothed momentum.
 * **Risk:** Implements Average True Range (ATR) based position sizing to equalize risk across assets, plus dynamic trailing stops.
+
 * **Execution:** Models the T+2 delayed entry and incorporates a pessimistic slippage model.
