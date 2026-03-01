@@ -1,0 +1,23 @@
+# ==========================================
+# Long Put Butterfly: Configuration Engine
+# ==========================================
+
+# Core Strategy Parameters
+strategy:
+  name: "Dynamic_Long_Put_Butterfly"
+  target_dte: 45                # Optimal days to expiration for entry (Theta sweet spot)
+  min_dte_exit: 10              # Hard time-based exit to avoid severe Gamma pin risk
+  target_profit_pct: 0.25       # Take profit when reaching 25% of max theoretical profit
+  max_loss_pct: 0.30            # Hard stop-loss if the position drops 30% of net debit paid
+
+# Execution & Risk Limits
+execution:
+  max_slippage_tolerance: 0.05  # Reject trade if 4-leg slippage exceeds 5% of mid-price
+  capital_allocation_pct: 0.02  # Maximum account equity to risk on a single butterfly (2%)
+  risk_free_rate: 0.045         # Current risk-free rate for Black-Scholes pricing (e.g., 4.5%)
+
+# Alpha Engine (Volatility & Strike Selection)
+alpha:
+  kde_bandwidth: 0.1            # Sensitivity parameter for Kernel Density probability mapping
+  wing_width_min: 2.0           # Minimum allowable distance for the protective long wings
+  wing_width_max: 10.0          # Maximum allowable distance to prevent excessive capital outlay
