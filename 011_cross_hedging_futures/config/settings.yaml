@@ -1,0 +1,15 @@
+assets:
+  spot_ticker: "JNK"       
+  futures_ticker: "ZN=F"   
+
+capital:
+  spot_position_value: 10000000  
+  futures_multiplier: 1000       
+
+kalman_params:
+  trans_cov: 0.0001        
+  obs_cov: 0.01            
+
+risk_limits:
+  max_basis_zscore: 3.0    
+  rolling_window: 60       
